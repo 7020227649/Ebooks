@@ -24,6 +24,8 @@ Every advertising platform operates as a walled garden that aggressively over-cl
 
 In 2026, enterprise brands discard multi-touch attribution in favor of **The Triangulation Model**: combining Platform CAPI, Bayesian MMM, and Geo-Lift Experiments.
 
+![The Attribution Triangulation Architecture: CAPI, Bayesian MMM & Geo-Lift Testing](assets/attribution_geolift_triangulation.jpg)
+
 ---
 
 ## 2. Open-Source Bayesian Marketing Mix Modeling (Robyn & Meridian)

@@ -29,6 +29,8 @@ For fifteen years, media buyers relied on third-party client-side JavaScript pix
  (Result: 100% Signal Capture, EMQ ≥ 9.0, Sub-10ms Server Dispatch)
 ```
 
+![Server-Side Telemetry Mesh & First-Party CAPI Architecture](assets/server_side_telemetry_mesh.jpg)
+
 To survive and scale in 2026, advertisers must implement a **First-Party Server-Side Telemetry Mesh** delivering authenticated server-to-server payloads directly to ad network APIs.
 
 ---

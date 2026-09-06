@@ -24,6 +24,8 @@ High-scale performance marketing teams do not design ads one by one in isolated 
             (Outputs 100+ Variations via CSV Data Ingestion)
 ```
 
+![Figma Modular Ad Design System & Dynamic Component Tokens](assets/figma_dco_design_system.jpg)
+
 ### Master Figma Components:
 1. **The Hook Container**: Dynamic auto-layout banner with variant properties for `Type = [Warning, Question, Metric, Testimonial]` and `Theme = [Dark, Neon, Clean]`.
 2. **The Product Viewport**: Standardized frame supporting interchangeable 1:1 and 9:16 asset components.

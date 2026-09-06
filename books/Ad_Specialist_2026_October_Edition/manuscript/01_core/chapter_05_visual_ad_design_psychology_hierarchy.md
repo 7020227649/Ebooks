@@ -29,6 +29,8 @@ Eye-tracking laboratory studies demonstrate that mobile ad scanning deviates com
 * **Social Feeds (Meta/TikTok)**: The eye locks onto the **Geometric Center (the "Power Third")** first, snaps up to the primary visual hook headline, then descends to the CTA.
 * **Algorithmic Dwell Time**: Social algorithms (Meta Lattice, TikTok ByteDance Graph) track **"slow-scroll events"** where scroll velocity drops below $100\text{px/s}$. Inducing this slow-scroll even without an immediate click signals high creative quality, driving down your clearing auction CPM.
 
+![Mobile Feed Eye-Tracking Heatmap & Visual Scanning Hierarchy](assets/ad_design_heatmap_neuroscience.jpg)
+
 ---
 
 ## 2. Visual Contrast & The "Color Clash Principle"

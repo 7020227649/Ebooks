@@ -262,6 +262,17 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Content Images & Technical Diagrams */
+.book-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.8rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.12);
+  border: 1px solid #cbd5e1;
+}
+
 /* Callouts */
 .callout {
   border-left: 4px solid var(--accent-color);
@@ -460,5 +471,16 @@ li.checklist-item input[type="checkbox"] {
     object-fit: contain !important;
     box-shadow: none !important;
     border-radius: 4px !important;
+  }
+
+  .book-img {
+    max-width: 95% !important;
+    height: auto !important;
+    margin: 14px auto !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 }

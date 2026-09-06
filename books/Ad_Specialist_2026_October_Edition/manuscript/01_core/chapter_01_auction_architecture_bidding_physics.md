@@ -24,6 +24,8 @@ Digital ad networks utilize variations of two foundational auction mechanisms:
 └──────────────────────────────────┴─────────────────────────────────────┘
 ```
 
+![Real-Time Digital Ad Auction Architecture & Algorithmic Bidding Mechanics](assets/auction_bidding_physics.jpg)
+
 ### The Universal Ad Rank Equation
 
 Across both Google and Meta, your maximum monetary bid is only one component of auction clearance. The algorithmic clearing price is determined by **Total Ad Rank**:

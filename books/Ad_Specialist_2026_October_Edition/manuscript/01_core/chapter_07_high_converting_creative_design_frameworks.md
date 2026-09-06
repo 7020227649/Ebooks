@@ -4,6 +4,8 @@
 
 Top-tier performance creative studios do not guess what works; they deploy battle-tested visual frameworks calibrated for direct response. Below are the 8 definitive creative architectures:
 
+![Direct-Response Ad Frameworks: Us vs. Them & Anatomic Callouts](assets/high_converting_ad_frameworks.jpg)
+
 ---
 
 ### Framework 1: The "Us vs. Them" Comparative Matrix

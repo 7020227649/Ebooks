@@ -90,6 +90,7 @@ function parseMarkdown(md) {
         block.startsWith('<hr') ||
         block.startsWith('<table') ||
         block.startsWith('<li') ||
+        block.startsWith('<img') ||
         block.startsWith('__CODE_BLOCK_')) {
       return block;
     }
