@@ -1,0 +1,28 @@
+{
+  "name": "ebook-publishing-studio",
+  "version": "2.0.0",
+  "description": "Autonomous AI Agent Army & Multi-Book Publishing Studio for Ultra-High-Value Technical & Strategy eBooks.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:all": "node scripts/build.js --all",
+    "make:pdf": "node scripts/html-to-pdf.js",
+    "make:pdf:all": "node scripts/html-to-pdf.js --all",
+    "book:new": "node scripts/create-book.js",
+    "stats": "node scripts/stats.js",
+    "preview": "node scripts/preview.js",
+    "army:start": "node scripts/run-army.js",
+    "army:status": "node scripts/run-army.js --status",
+    "army:reset": "node scripts/run-army.js --reset"
+  },
+  "keywords": [
+    "ebook",
+    "markdown",
+    "publishing",
+    "ai-agents",
+    "pdf-generator",
+    "headless-chrome",
+    "multi-book"
+  ],
+  "author": "Jarvis & The AI Agent Army",
+  "license": "MIT"
+}

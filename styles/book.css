@@ -1,0 +1,464 @@
+/* ==========================================================================
+   EBook Publication Stylesheet & PDF Book Maker
+   Engineered for Screen Reading, E-Readers, and High-Resolution PDF Printing
+   Zero-Blank-Page Guarantee
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #0f172a;
+  --text-color: #1e293b;
+  --text-muted: #64748b;
+  --bg-color: #f1f5f9;
+  --card-bg: #ffffff;
+  --accent-color: #1e40af;
+  --accent-light: #eff6ff;
+  --border-color: #cbd5e1;
+  --font-serif: 'Newsreader', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Cinzel', serif;
+  --font-mono: 'JetBrains Mono', Consolas, Monaco, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Floating Action Toolbar (Hidden during PDF print) */
+.reader-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 9999;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.toolbar-brand {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.05em;
+}
+
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-print {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.btn-print:hover {
+  background: #1d4ed8;
+}
+
+/* Master Book Container */
+.book-container {
+  max-width: 860px;
+  margin: 80px auto 40px auto;
+  background: var(--card-bg);
+  padding: 70px 65px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Modular Chapter Container */
+.book-chapter {
+  margin-bottom: 3.5rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  color: var(--primary-color);
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.1rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.6rem;
+  margin-top: 1rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin-top: 1.8rem;
+  color: #1e3a8a;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+p {
+  margin: 1.15rem 0;
+  text-align: justify;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Table of Contents */
+.toc-container {
+  border: 1px solid var(--border-color);
+  background: #f8fafc;
+  padding: 28px 32px;
+  border-radius: 6px;
+  margin: 2rem 0;
+  font-family: var(--font-sans);
+}
+
+.toc-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.4rem;
+  color: var(--primary-color);
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 0;
+  border-bottom: 1px dotted #cbd5e1;
+  font-size: 0.98rem;
+}
+
+.toc-item a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.toc-item a:hover {
+  color: var(--accent-color);
+}
+
+.toc-badge {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Title Page (Full Cover Frame) */
+.title-page {
+  text-align: center;
+  padding: 80px 30px;
+  border: 4px double var(--primary-color);
+  margin-bottom: 40px;
+  background: #fdfdfd;
+  border-radius: 4px;
+}
+
+.book-title {
+  font-family: var(--font-display);
+  font-size: 2.7rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  border-bottom: none;
+  text-transform: uppercase;
+}
+
+.book-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.5;
+}
+
+.book-author {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary-color);
+}
+
+.book-meta {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* Book Cover Styling */
+.book-cover-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 2.5rem auto;
+  padding: 10px;
+}
+
+.book-cover-img {
+  max-width: 100%;
+  max-height: 820px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.25);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Callouts */
+.callout {
+  border-left: 4px solid var(--accent-color);
+  background: var(--accent-light);
+  padding: 16px 20px;
+  margin: 1.6rem 0;
+  border-radius: 0 6px 6px 0;
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.callout-tip {
+  border-left-color: #059669;
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.callout-warning {
+  border-left-color: #d97706;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.callout-action {
+  border-left-color: #4f46e5;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+/* Blockquotes & Code */
+blockquote {
+  border-left: 4px solid #94a3b8;
+  margin: 1.6rem 0;
+  padding: 0.5rem 1.4rem;
+  font-style: italic;
+  color: #334155;
+  background: #f8fafc;
+  border-radius: 0 4px 4px 0;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #0f172a;
+}
+
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 18px 22px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  border: 1px solid #1e293b;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background: #f1f5f9;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* Checklists */
+li.checklist-item {
+  list-style: none;
+  margin: 6px 0;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+
+li.checklist-item input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.15);
+}
+
+/* Screen divider between chapters */
+@media screen {
+  .book-chapter:not(:first-child) {
+    border-top: 2px dashed #cbd5e1;
+    padding-top: 2rem;
+  }
+}
+
+/* ==========================================================================
+   High-Resolution PDF Print Engine & Paged Media Styling
+   ZERO BLANK PAGES ARCHITECTURE
+   ========================================================================== */
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 14mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10pt;
+    line-height: 1.55;
+  }
+
+  .reader-toolbar {
+    display: none !important;
+  }
+
+  .book-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Single, Controlled Page Break: Only before new chapters */
+  .book-chapter {
+    break-before: page !important;
+    page-break-before: always !important;
+    margin-bottom: 0 !important;
+    padding-top: 10px !important;
+  }
+
+  /* First chapter / cover NEVER breaks before */
+  .book-chapter:first-of-type,
+  .book-chapter.first-section {
+    break-before: avoid !important;
+    page-break-before: avoid !important;
+    padding-top: 0 !important;
+  }
+
+  /* Keep headings attached to following paragraph */
+  h1, h2, h3, h4 {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  h1 {
+    margin-top: 0 !important;
+    padding-bottom: 6px !important;
+  }
+
+  /* Prevent blocks from splitting mid-element across page boundaries */
+  pre, blockquote, .callout, table, tr, img, .toc-container {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .title-page {
+    border: 3px double #000000 !important;
+    padding: 60px 20px !important;
+    margin: 20px auto !important;
+  }
+
+  .book-cover-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .book-cover-img {
+    max-width: 100% !important;
+    max-height: 94vh !important;
+    height: auto !important;
+    object-fit: contain !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+  }
+}
