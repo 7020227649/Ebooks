@@ -1,8 +1,8 @@
 # Appendix A: The Master Ad Operations & Creative Launch Checklist
-### Full 100-Point Pre-Flight Verification Suite
+### Full 140-Point Enterprise Agency Pre-Flight Verification Suite
 
 > [!IMPORTANT]
-> Execute this deterministic 100-point audit before launching any media campaign, deploying new creatives, scaling spend, or releasing landing pages. Every item represents an empirically verified performance, tracking, or fraud mitigation factor.
+> Execute this deterministic 140-point agency audit before launching any media campaign, deploying new creatives, scaling spend, or releasing landing pages. Every item represents an empirically verified performance, tracking, or fraud mitigation factor.
 
 ---
 
@@ -143,3 +143,59 @@
 - [ ] 98. Auction overlap across ad sets is audited in Meta Delivery Insights, keeping overlap below $15\%$.
 - [ ] 99. Campaign scaling increments are restricted to $+15\% \text{ to } +20\%$ every 48 hours to preserve neural stability.
 - [ ] 100. Weekly post-mortem audits archive underperforming creative concepts and double down on validated winning angles.
+
+---
+
+### Part XI: Offer Architecture & Working Capital Float (Points 101–110)
+- [ ] 101. The front-end offer incorporates a high-converting Tiered Volume Bundle (Buy 1, Buy 2 + Gift, Buy 3 Max Value).
+- [ ] 102. The price of Tier 1 is anchored high enough to make Tier 2 appear as an undeniable $20\%-35\%$ discount bargain.
+- [ ] 103. Risk reversal is absolute: 30-day, 60-day, or 100-day money-back guarantee prominently displayed above the fold.
+- [ ] 104. Subscription continuity options (Subscribe & Save) feature zero cancellation friction and transparent reminders.
+- [ ] 105. Post-purchase 1-click upsells (bypassing re-entering card details) are operational, lifting AOV by $\ge 15\%$.
+- [ ] 106. Contribution Margin dollar flow is modeled before launching campaigns: $tROAS_{\text{BE}}$ calculated from true COGS.
+- [ ] 107. Cash conversion cycle (CCC) is audited: ad spend funded via 30/60-day corporate credit lines to leverage revenue float.
+- [ ] 108. CAC payback window is verified: customer acquisition cost is recouped in cash within $\le 30\text{ days}$.
+- [ ] 109. Checkout includes instant digital bonuses or free shipping threshold bars that encourage adding supplementary items.
+- [ ] 110. Product unboxing, packaging, and welcome onboarding sequence are engineered to minimize immediate post-purchase chargebacks.
+
+---
+
+### Part XII: Agency 30-Day Turnaround & Account Triage (Points 111–120)
+- [ ] 111. Week 1 triage audit exports 60 days of historical data and pauses all "zombie ads" spending $> 3\times\text{ CPA}$ with zero sales.
+- [ ] 112. Account-level negative keyword lists block all client brand terms from generic PMax and Search campaigns.
+- [ ] 113. Display Network and mobile app placement categories are globally purged to stop budget siphoning.
+- [ ] 114. Fragmented micro-targeted ad sets are consolidated into 1 Broad Advantage+ Shopping Campaign (ASC).
+- [ ] 115. Weekly creative sprints deploy at least 8 to 10 new assets based on the 8 proven visual frameworks.
+- [ ] 116. Creative sandbox campaigns isolate testing spend to $10\%-20\%$ of total budget using the 3:2:2 framework.
+- [ ] 117. Validated winning creative assets are graduated into the primary ASC scaling campaign with Post IDs preserved.
+- [ ] 118. Budget scaling increments strictly adhere to the $+15\% \text{ to } +20\%$ 48-hour rule to prevent learning resets.
+- [ ] 119. Geo-Lift incrementality holdout tests establish causal revenue baseline and calibrate attribution models.
+- [ ] 120. Executive turnaround scorecard reports weekly net contribution margin, blended CAC, and EBITDA recovery to client stakeholders.
+
+---
+
+### Part XIII: Creator Licensing, Partnership Ads & TikTok Shop (Points 121–130)
+- [ ] 121. Creator Partnership Ad codes are authenticated in Meta Ads Manager for dark-posting through verified creator handles.
+- [ ] 122. Creator briefs provide 3 distinct visual pattern interrupt hooks (0-3s), problem agony, and direct CTAs.
+- [ ] 123. Ad usage and licensing rights (including whitelisting permissions) are contractually secured for a minimum of 90 days.
+- [ ] 124. TikTok Video Shopping Ads (VSA) link directly to in-app product detail pages for zero-latency checkout.
+- [ ] 125. TikTok Affiliate Spark Ads boost top-performing organic creator videos via authorized Spark Codes.
+- [ ] 126. Paid ad spend is scheduled to boost concurrent viewership during high-converting scheduled Live Selling events.
+- [ ] 127. Whitelisted creator custom audiences (profile visitors, video engagers) are populated for retargeting pools.
+- [ ] 128. Creator audio voiceovers are normalized to -14 LUFS with native platform subtitles burned into the video.
+- [ ] 129. Partnership ads are tested against identical brand-handle creatives to quantify the whitelisting CPM discount.
+- [ ] 130. High-converting creator video hooks are isolated and spliced onto proven existing video bodies to scale hook iterations.
+
+---
+
+### Part XIV: Enterprise B2B Lead Gen & Agency Governance (Points 131–140)
+- [ ] 131. Google Ads and Meta CAPI receive bi-directional Offline Conversion Imports (OCI) for downstream CRM lifecycle stages.
+- [ ] 132. Smart Bidding optimizes for `Sales_Qualified_Opportunity` and `Closed_Won_Deal` rather than unvetted form fills.
+- [ ] 133. Google Click ID (`gclid`) and Meta Click ID (`fbclid`) are captured in hidden form fields and stored in CRM lead records.
+- [ ] 134. LinkedIn Thought Leader Ads amplify authentic executive personal posts alongside corporate company page campaigns.
+- [ ] 135. High-value B2B technical whitepapers are distributed via interactive native LinkedIn Document / PDF Carousels.
+- [ ] 136. Marketing Efficiency Ratio (MER) and Profit on Ad Spend (POAS) are tracked daily in an executive data dashboard.
+- [ ] 137. Weekly Performance Reviews (WPR) follow the standardized 4-slide executive governance framework.
+- [ ] 138. Cross-platform attribution conflicts are reconciled using Bayesian Marketing Mix Modeling (MMM) rather than platform dashboards.
+- [ ] 139. Account access adheres to least-privilege security standards: two-factor authentication enforced for all media buyers.
+- [ ] 140. Quarterly client growth roadmaps model capital requirements, inventory lead times, and marginal CAC saturation thresholds.
